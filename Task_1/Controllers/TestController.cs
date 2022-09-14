@@ -4,7 +4,7 @@ namespace Task_1
 {
     public class TestController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Message()
         {
             return View();
         }

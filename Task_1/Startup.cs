@@ -4,28 +4,40 @@ namespace Task_1
 {
     public class Startup
     {
-        public IConfiguration configRoot
-        {
-            get;
-        }
         public Startup(IConfiguration configuration)
         {
-            configRoot = configuration;
+            Configuration = configuration;
         }
+
+        public IConfiguration Configuration { get; }
+
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddControllersWithViews();
+
             services.AddMvc();
         }
 
-        public void Configure(WebApplication app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-           
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
+
             app.UseRouting();
-            app.UseMvc();
-            app.MapRazorPages();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

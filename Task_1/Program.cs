@@ -10,12 +10,18 @@ namespace Task_1
             /// Test / Message отображалась страница с сообщением «Hello world», а при запросе List / Info -
             //отображался список<ul> с тремя элементами и произвольным текстом.
 
-
-            var builder = WebApplication.CreateBuilder(args);
-            var startup = new Startup(builder.Configuration);
-            startup.ConfigureServices(builder.Services); // calling ConfigureServices method
-            var app = builder.Build();
-            startup.Configure(app, builder.Environment); // calling Configure method
+            CreateHostBuilder(args).Build().Run();
+            //var builder = WebApplication.CreateBuilder(args);
+            //var startup = new Startup(builder.Configuration);
+            //startup.ConfigureServices(builder.Services); // calling ConfigureServices method
+            //var app = builder.Build();
+            //startup.Configure(app, builder.Environment); // calling Configure method
         }
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }
