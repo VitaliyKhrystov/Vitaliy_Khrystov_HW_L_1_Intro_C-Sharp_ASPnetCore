@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_1", "Task_1\Task_1.csproj", "{DE86651F-7F43-4021-9FCE-35277BE1933D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleApp", "..\..\01. Введение. Шаблон MVC. Middleware\03 SimpleApp\SimpleApp\SimpleApp.csproj", "{DE6264D7-21FA-40F1-8BDB-FCC8272DA33C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taks_2", "Task_2\SimpleApp\Taks_2.csproj", "{DCBC5CE1-EE5E-4E23-B07F-1C3C95DBEBA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DE86651F-7F43-4021-9FCE-35277BE1933D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE86651F-7F43-4021-9FCE-35277BE1933D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE86651F-7F43-4021-9FCE-35277BE1933D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE6264D7-21FA-40F1-8BDB-FCC8272DA33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE6264D7-21FA-40F1-8BDB-FCC8272DA33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE6264D7-21FA-40F1-8BDB-FCC8272DA33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE6264D7-21FA-40F1-8BDB-FCC8272DA33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBC5CE1-EE5E-4E23-B07F-1C3C95DBEBA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBC5CE1-EE5E-4E23-B07F-1C3C95DBEBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBC5CE1-EE5E-4E23-B07F-1C3C95DBEBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBC5CE1-EE5E-4E23-B07F-1C3C95DBEBA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
